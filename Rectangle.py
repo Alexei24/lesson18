@@ -10,17 +10,11 @@ class Rectangle:
         return (self.a + self.b) * 2
 
 
-    def get_info(self):
+    def __repr__(self):
+        return "Technical information about instance."
+
+    def __str__(self):
         return f"Rectangle: a = {self.a}, b = {self.b} "
 
-
-
-rect1 = Rectangle(10,15)
-rect2 = Rectangle(b=15, a = 10)
-rect3 = Rectangle(20)
-rect4 = Rectangle()
-
-print(rect1.get_info())
-print(rect2.get_info())
-print(rect3.get_info())
-print(rect4.get_info())
+#rect = Rectangle()
+#print(rect)
