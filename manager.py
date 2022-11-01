@@ -1,0 +1,20 @@
+from Rectangl_creator import RectangleCreator
+from Rectangl_creator import Rectangle
+from logic import Logic
+from view import View
+
+def main():
+
+    size = 2
+    ls = RectangleCreator.get_rectangles(size)
+    total_square = Logic.calculate_total_square(ls)
+    total_perimetr = Logic.calculate_total_perimetr(ls)
+
+    msg = (f"Total square = {total_square}\n" 
+            f"Total perimetr = {total_perimetr}")
+
+    print(View.convert(ls))
+    print(msg)
+
+if __name__ == "__main__":
+    main()
